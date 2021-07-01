@@ -1,0 +1,140 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* styling begins here */
+.container{
+  width: 60%;
+  height: 400px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.icons{
+  width: 80px;
+
+}
+#orange{
+  background-color: #E28525;
+  color: #E28525;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#blue{
+  background-color: #016972;
+  color: #016972;
+}
+#green{
+  background-color: #00403F;
+  color: #00403F;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card{
+  height: 400px;
+  padding: 40px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+h2{
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: -0.05em ;
+  color: white;
+  font-size: 1.5rem;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: .8rem;
+  line-height: 1.5em;
+}
+.bot{
+  background-color: white;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-stretch: ultra-expanded;
+  width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+.bot:hover{
+  background-color: inherit;
+  border: 1px solid white;
+  color: white;
+}
+
+.bot:active{
+  background-color: inherit;
+  border: 1px solid white;
+  color: white;
+  box-shadow: 0px 0px 10px 5px rgba(53, 54, 54, 0.466)
+}
+
+@media (max-width: 720px){
+  .container{
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+  .card{
+    height: 400px;
+  }
+  #orange{
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #green{
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
